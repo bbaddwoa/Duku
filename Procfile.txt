@@ -1,1 +1,1 @@
-web: fin_Draft_2:server
+web: gunicorn fin_Draft_2:server
