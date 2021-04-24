@@ -1,4 +1,4 @@
-# Comparing 2020 Season Average Scores Between Two players, Player 1 and Player 2
+# Comparing 2020 Season Average Scores Between Two players.
 
 
 The National Collegiate Athletic Association (NCAA) Women Division 1 Basketball Tournament has 64 teams. 
