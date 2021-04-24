@@ -178,6 +178,7 @@ def update_table(player1, player2):
     x = df[df.Player.isin([player1, player2])]#.sort_values('df.Player')
     return generate_table(x)
 
+server = app.server 
 
 # running the dashboard. debug = True --> running in debug mode 
 if __name__ == '__main__':
