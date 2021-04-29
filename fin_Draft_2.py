@@ -105,7 +105,7 @@ app.layout = html.Div([
     html.P('https://sports.yahoo.com/ncaaw/teams/albany/roster', 
                  style={'width': '45%'} ),    
     
-    html.H4("Author: "),
+    html.H5("Submitted by: "),
     html.P('Adwoa Osei-Yeboah', 
                  style={'width': '45%'} )
     ])
