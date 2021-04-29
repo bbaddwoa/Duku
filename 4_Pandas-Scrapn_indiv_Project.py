@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 """
 Created on Thu Apr 15 01:51:29 2021
 
@@ -64,8 +64,8 @@ player2 = df_P2[0]          # Lucia Decortes
 
 
 
-
-# CLEANING THE DATA 
+# STEP 2: CLEANING THE DATA 
+#********************************
 
 # Player 1
 # Date was replaced NaN when scraped. Below is the right order from top to bottom
@@ -121,147 +121,20 @@ player2.loc[16, 'Date'] ='13-Dec-2020'
 player2.loc[17, 'Date'] ='11-Dec-2020'
 
 
+# STEP 3: Creating a csv file for the dataset
+#********************************
 
-# Creating a csv file for the dataset
 team.to_csv(r'C:\Users\16122\Documents\Data_Science\Luke_Class\PracticeQ_\Individual_Project\export_team.csv' , index=False, header=True)
 player1.to_csv(r'C:\Users\16122\Documents\Data_Science\Luke_Class\PracticeQ_\Individual_Project\export_player1.csv' , index=False, header=True)
 player2.to_csv(r'C:\Users\16122\Documents\Data_Science\Luke_Class\PracticeQ_\Individual_Project\export_player2.csv' , index=False, header=True)
 
-# Reading the csv file 
+
+# STEP 4: Reading the csv file
+#********************************
+
 team_csv = pd.read_csv('export_team.csv')
 player1_csv = pd.read_csv('export_player1.csv')
 player2_csv = pd.read_csv('export_player2.csv')
-
-
-
-
-
-
-
-# plot of pts vrs date
-'''
-fig, ax = plt.subplots(1,1, figsize = (18,10), constrained_layout = True)
-
-
-ax.plot(player1['Date'], player1['Pts'])
-ax.plot(player2['Date'], player2['Pts'])
-plt.xlabel('Date', fontsize = 20)
-plt.ylabel('Points Earned in 2020', fontsize = 20)
-plt.title('Comparing Points of Helen Haegerstrand & Lucia Devortes in 2020', fontsize = 25, fontweight = 'bold')
-'''
-
-
-
-#word = (player1, player2)
-#plt.legend(word)  #?????????????????
-
-# Q what other plots will u suggest?
-# side by side bar plots on points and rebounds
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Reference: 
-# https://www.youtube.com/watch?v=ooj84UP3r6M   --> pandas scraping
-# https://www.youtube.com/watch?v=ng2o98k983k   --> BeautifulSoup scraping 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
